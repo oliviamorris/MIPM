@@ -119,7 +119,7 @@ create_P_kernel<- function(y, h, Tc, t = 1, at0 = at0, z0 = z0){ #specify min an
   G = h*outer(y, y, g.yx, Tc, t, at0 = at0)  
   # survival S
   S = s.x(y, Tc, z0 = z0)
-  #these give us our P matrix:
+  # P matrix:
   P = G       
   for(i in 1:n) P[,i]=G[,i]*S[i]  
   
@@ -254,7 +254,7 @@ project_monthmatrices<- function (y, h, n, Temp_vector_data, initial_abundance, 
     #create months list 
     months<- list()
     
-    #spawning month as first month (IS THIS CORRECT OR SHOULD I AUTOMATE IT TO BE EASILY SPECIFIED?)
+    #spawning month as first month
     months[[1]] <-create_K_month(y, h, Temp_vector = Temp_vector, leapyear = leapyear, month = spawningmonth, spawningday = spawningday, at0 = at0, z0 = z0)
     #rest of months
     for (j in 2:12){
@@ -299,226 +299,91 @@ add_burn_in<- function(data, n_burnin_years){
 }
 
 
-# 
-# ###### a modification from projectmonthmatrices
-# #Create month matrices
-# get_month_matrices<- function (y, h, n, Temp_vector_data, spawningmonth = 11 , spawningday = 1, at0 = at0, z0 = z0){
-#   
-#   start_time<-Sys.time()
-#   
-#   years<- unique(Temp_vector_data$no.years.for.sim)
-#   
-#   #create vector to put all months into
-#   allmonths<-vector("list", max(years))
-#   
-#   #time frame beginning with spawning month
-#   if (spawningmonth==1){
-#     time <- 1:12
-#   } else if (spawningmonth %in% 2:12) {
-#     time<- c(spawningmonth:12,1:(spawningmonth-1))
-#   }
-#   
-#   #leap year?
-#   for (i in seq_along(years)){
-#     
-#     data2subset<-subset(Temp_vector_data, no.years.for.sim == i) #novyears
-#     Temp_vector<- data2subset$meantemp #Temp_vector_data needs to have meantemp column
-#     
-#     if (nrow(data2subset) == 366){
-#       leapyear <- "yes"
-#     } else if (nrow(data2subset) == 365){
-#       leapyear <- "no"
-#     } else {
-#       stop("wrong number of days")
-#     }
-#     
-#     #create months list 
-#     months<- list()
-#     
-#     #spawning month as first month (IS THIS CORRECT OR SHOULD I AUTOMATE IT TO BE EASILY SPECIFIED?)
-#     months[[1]] <-create_K_month(y, h, Temp_vector = Temp_vector, leapyear = leapyear, month = spawningmonth, spawningday = spawningday, at0 = at0, z0 = z0)
-#     #rest of months
-#     for (j in 2:12){
-#       months[[j]] <- create_P_month(y, h, month = time[j] , Temp_vector = Temp_vector, leapyear = leapyear, at0 = at0, z0 = z0)
-#     }
-#     
-#     #months into a year
-#     allmonths[[i]]<- months
-#     
-#   }
-#   
-#   #Un list allmonths to loop over
-#   allmonths<-lapply(rapply(allmonths, enquote, how="unlist"), eval)
-#   #allmonths<-unlist(allmonths, recursive = F)
-#   
-#   end_time<- Sys.time()
-#   #How long function takes to run
-#   print(end_time - start_time)
-#   
-#   return(allmonths) #allmonths
-# }
-# 
-# 
-# 
-# 
-# #ouput from above goes into this to get matrix out
-# 
-# Project_abundances_matrix<- function(allmonths, Temp_vector_data, initial_abundance){
-#   
-#   #From temperature data input
-#   years<- unique(Temp_vector_data$no.years.for.sim)
-#   #Convert input years to months
-#   total_period_projection_months<-max(years)* 12 
-#   #Create empty matrix to populate (abundance data)
-#   allabundances<- matrix(0, nrow = n, ncol = total_period_projection_months+1) #plus one for initial abundance
-#   #Insert initial abundance
-#   allabundances[,1]<- initial_abundance
-#   
-#   
-#   #Project loop
-#   for (i in 2:(total_period_projection_months+1)){
-#     allabundances[,i]<- allmonths[[i-1]] %*% allabundances[,i-1]
-#   }
-#   
-#   return(allabundances)
-# }
+
+###### a modification from projectmonthmatrices
+#Create month matrices
+get_month_matrices<- function (y, h, n, Temp_vector_data, spawningmonth = 11 , spawningday = 1, at0 = at0, z0 = z0){
+
+  start_time<-Sys.time()
+
+  years<- unique(Temp_vector_data$no.years.for.sim)
+
+  #create vector to put all months into
+  allmonths<-vector("list", max(years))
+
+  #time frame beginning with spawning month
+  if (spawningmonth==1){
+    time <- 1:12
+  } else if (spawningmonth %in% 2:12) {
+    time<- c(spawningmonth:12,1:(spawningmonth-1))
+  }
+
+  #leap year?
+  for (i in seq_along(years)){
+
+    data2subset<-subset(Temp_vector_data, no.years.for.sim == i) #novyears
+    Temp_vector<- data2subset$meantemp #Temp_vector_data needs to have meantemp column
+
+    if (nrow(data2subset) == 366){
+      leapyear <- "yes"
+    } else if (nrow(data2subset) == 365){
+      leapyear <- "no"
+    } else {
+      stop("wrong number of days")
+    }
+
+    #create months list
+    months<- list()
+
+    #spawning month as first month (IS THIS CORRECT OR SHOULD I AUTOMATE IT TO BE EASILY SPECIFIED?)
+    months[[1]] <-create_K_month(y, h, Temp_vector = Temp_vector, leapyear = leapyear, month = spawningmonth, spawningday = spawningday, at0 = at0, z0 = z0)
+    #rest of months
+    for (j in 2:12){
+      months[[j]] <- create_P_month(y, h, month = time[j] , Temp_vector = Temp_vector, leapyear = leapyear, at0 = at0, z0 = z0)
+    }
+
+    #months into a year
+    allmonths[[i]]<- months
+
+  }
+
+  #Un list allmonths to loop over
+  allmonths<-lapply(rapply(allmonths, enquote, how="unlist"), eval)
+
+  #How long function takes to run
+  end_time<- Sys.time()
+  print(end_time - start_time)
+
+  return(allmonths) 
+}
 
 
+#ouput from above goes into this to get matrix out
 
-# 
-# #NEW WITH PROPORTIONAL W_ij IN RELATION TO WHERE DATA IS
-# #2. Function that uses project_matrices() and spits out just the proportions in each august in each year
-# SAD_props_count_data_month_nogrouping<- function(abundancemodeldata, countdata, burnindates, modeldates, startdate, month2select){
-#   
-#   #start_time<-Sys.time()
-#   
-#   #IPM over data time frame called abundance model data
-#   #abundancemodeldata<- project_monthmatrices(y = y, h = h, n = n, initial_abundance = initial_abundance, Temp_vector_data = Data2Run)
-#   
-#   #Convert matrix to data frame with dates and abundances to subset August (make a date argument in function?)
-#   #Save length of abundance_data (long format)
-#   length<- ncol(abundancemodeldata)
-#   #Convert into data frame
-#   abundancemodeldata<-data.frame(abundancemodeldata)
-#   #Add log mass column
-#   abundancemodeldata$logmass<- y
-#   #Add exp mass column
-#   abundancemodeldata$mass<- exp(y)
-#   
-#   #Wide to long format
-#   abundance_data<-gather(abundancemodeldata, col, abundance, 1:length, factor_key = T)
-#   
-#   #Number of data divisions = n in global environment
-#   #Add dates to data
-#   abundance_data_df_allmonthyears_noinit<-abundance_data[-c(1:n), ]
-#   abundance_data_df_allmonthyears_noinit$Date <-c(rep(burnindates, each = n), rep(modeldates, each = n))
-#   abundance_data_df_allmonthyears_noinit$Date <-as.yearmon(abundance_data_df_allmonthyears_noinit$Date)
-#   abundance_data_df_allmonthyears_noinit_monthyear<-abundance_data_df_allmonthyears_noinit  %>% group_by(mass, abundance) %>%
-#     mutate(month = format(Date, "%m"), year = format(Date, "%Y" ))
-#   
-#   #Subset the august dates
-#   month_abundance_subsetted_year<- subset(abundance_data_df_allmonthyears_noinit_monthyear, month == month2select)
-#   
-#   #Remove burnin
-#   months_years_to_test<-subset(month_abundance_subsetted_year, Date >= startdate) #specify date?
-#   
-#   #Create one data frame to run analyses on
-#   data<-cbind(countdata, months_years_to_test)
-#   #Add number of years to loop over
-#   data$noyears<-as.numeric(factor(data$year))
-#   
-#   #make count data 0s for fish that are catchable, between exp(-1) ~0.36g and exp(3)
-#   data$count[is.na(data$count) & data$mass > exp(-1) & data$mass < exp(3)] <- 0
-#   
-#   #Calculate proportions from abundances, proportions only include rows where there is data (excludes where count is NA)
-#   #Sum
-#   data_total<-data %>% group_by(year) %>%  mutate(total = sum(abundance * !is.na(count))) 
-#   #Divide proportions by total
-#   data_props<-data_total %>% group_by(year, mass) %>%  mutate(prop = (abundance * !is.na(count))/total)
-#   
-#   #Replace prop 0s with NA to remove
-#   data_props$prop[data_props$prop==0] <- NA
-#   data4LL<-data_props %>% drop_na(prop)
-#   
-#   #return Data to run log likelihood on
-#   return(data4LL)
-# }
-# 
-# 
-# 
-# 
-# #trying diff param space
-# paramsearch_juveloglike_lambda_slope_intercept<- function(Paramdata, Temp_vector_data, initial_abundance, countdata, n_burnin_years = 40, burnindates, modeldates, startdate, month2select, at0 = at0, z0= z0, spawningmonth){
-#   
-#   #Create empty data
-#   out <- matrix(nrow = nrow(Paramdata), ncol = 2, NA)
-#   #and empty list for slope calc (size frequency dist)
-#   out_list<-list()
-#   #Loop for every parameter combination
-#   for (i in 1:nrow(Paramdata)) {
-#     #Print count for looking at how far through we are
-#     #print(paste(i)) 
-#     at0<- Paramdata$at0[i] 
-#     z0<- Paramdata$z0[i]
-#     #print(paste(at0, z0))
-#     #Create IPM over data time frame called abundance model data
-#     #abundancemodeldata<- project_monthmatrices(y = y, h = h, n = n, initial_abundance = initial_abundance, Temp_vector_data = Data2Run)
-#     
-#     #Get month matrices over which to calculate lambda
-#     allmonthsdata<-get_month_matrices(y = y, h = h, n = n, Temp_vector_data = Temp_vector_data, at0 = at0, z0 = z0, spawningmonth = spawningmonth)
-#     #Project these as usual
-#     abundancemodeldata<-Project_abundances_matrix(allmonths = allmonthsdata, Temp_vector_data = Temp_vector_data, initial_abundance = initial_abundance)
-#     #Turn into proportions and combine with empirical data
-#     SAD_props_count<-SAD_props_count_data_month_nogrouping(abundancemodeldata = abundancemodeldata, countdata = countdata, burnindates = burnindates, modeldates = modeldates, startdate = startdate, month2select = month2select)
-#     #Fill data frame with log likelihood
-#     out[i,1] <- overall_loglik(data = SAD_props_count)
-#     
-#     #remove burnin for calculating lambda
-#     burnin2remove<-1:(n_burnin_years*12)
-#     allmonthsdata_noburnin<-allmonthsdata[-burnin2remove]
-#     #Fill data with Lambda (no burn in)
-#     out[i,2] <- get_lambda(allmonths = allmonthsdata_noburnin)
-#     #Slope
-#     out_list[[i]] <- calc_slope_allyears(abundance_data = abundancemodeldata, burnindates = burnindates, modeldates = modeldates, startdate = startdate)
-#   }
-#   
-#   
-#   data.out <- as.data.frame(out)
-#   names(data.out) <- paste(c("JuveLogLikelihood","Lambda"))
-#   data.out <- cbind(Paramdata, data.out)
-#   
-#   #slope
-#   #Calculate slope and add to dataframe
-#   slope<- c()
-#   for (i in 1:length(out_list)){
-#     #slope[i]<-coef(out_list[[i]])[2]
-#     slope[i]<-tryCatch(coef(out_list[[i]])[2], error=function(err) NA)  
-#   }
-#   data.out$Slope<- slope
-#   
-#   #Add intercept to dataframe
-#   intercept<- c()
-#   for (i in 1:length(out_list)){
-#     #intercept[i]<-coef(out_list[[i]])[1]
-#     intercept[i]<-tryCatch(coef(out_list[[i]])[1], error=function(err) NA)  
-#   }
-#   data.out$Intercept<- intercept
-#   
-#   
-#   return(data.out)
-#   
-# }
-# 
+Project_abundances_matrix<- function(allmonths, Temp_vector_data, initial_abundance){
+
+  #From temperature data input
+  years<- unique(Temp_vector_data$no.years.for.sim)
+  #Convert input years to months
+  total_period_projection_months<-max(years)* 12
+  #Create empty matrix to populate (abundance data)
+  allabundances<- matrix(0, nrow = n, ncol = total_period_projection_months+1) #plus one for initial abundance
+  #Insert initial abundance
+  allabundances[,1]<- initial_abundance
+
+  #Project loop
+  for (i in 2:(total_period_projection_months+1)){
+    allabundances[,i]<- allmonths[[i-1]] %*% allabundances[,i-1]
+  }
+
+  return(allabundances)
+}
+
 
 #Convert to dataframe for plotting
 matrix2dataframe<- function(abundancemodeldata, countdata, burnindates, modeldates, startdate){
   
   #start_time<-Sys.time()
-  
-  #IPM over data time frame called abundance model data
-  #abundancemodeldata<- project_monthmatrices(y = y, h = h, n = n, initial_abundance = initial_abundance, Temp_vector_data = Data2Run)
-  
-  #Convert matrix to data frame with dates and abundances to subset August (make a date argument in function?)
   #Save length of abundance_data (long format)
   length<- ncol(abundancemodeldata)
   #Convert into data frame
@@ -607,7 +472,7 @@ calc_fxd_temps_lambda<- function(fxd_Temp, Parameter_data){
   LambdaTempdf<-cbind(Parameter_data, Lambda, Temp)
   
   return(LambdaTempdf)
-} #FOR SIX PARAMS
+}
 
 #median
 weighted.median <- function(x, w) {
@@ -627,7 +492,6 @@ aug_median_mass_fxdtemp<- function(fxd_Temp, at0, z0){
   #head(fixed_temp_data)
   
   abundance_data<-project_monthmatrices(y = y, h = h, n = n, initial_abundance = initial_abundance, Temp_vector_data = fixed_temp_data, at0 = at0, z0 = z0, spawningmonth = 11)
-  #plot(colSums(abundance_data), type ="l" , log = "y")
   #Save length of abundance_data (long format)
   length<- ncol(abundance_data)
   #Into data frame
@@ -647,7 +511,7 @@ aug_median_mass_fxdtemp<- function(fxd_Temp, at0, z0){
   #Select August
   DF_fixed_aug<-subset(DF_fixed, month == "8")
   
-  #Stable Age distribution as graph?
+  #Stable Age distribution as graph
   
   #need to time average over 'model' time 
   #group by mass calculate mean abundance
@@ -664,12 +528,9 @@ aug_median_mass_fxdtemp<- function(fxd_Temp, at0, z0){
     theme_cowplot()
   print(p)
   
-  #aug_median_mass<-avprop_overTS$logmass[which.min(abs(avprop_overTS$averageprop_ts - median(avprop_overTS$averageprop_ts)))]
+  #calc median of size dist
   aug_median_mass<-weighted.median(avprop_overTS$logmass, avprop_overTS$averageprop_ts)
   
-  #aug_mean_mass<- weighted.mean(avprop_overTS$logmass, avprop_overTS$averageprop_ts)
-  
-  #stretchiness<- aug_mean_mass - aug_median_mass
   
   return(aug_median_mass)
 }
@@ -678,7 +539,7 @@ aug_median_mass_fxdtemp<- function(fxd_Temp, at0, z0){
 burnin2remove<-1:(40*12)
 
 #amplitudes relationship to temp
-amplitude_func<- function(meantemp, x = 5.4265, y = -0.0163){   #x = 6.2285, y = -0.1227
+amplitude_func<- function(meantemp, x = 5.4265, y = -0.0163){   
   amp<-( y * meantemp) + x
   return(amp)
 }
@@ -691,11 +552,7 @@ calc_varied_temps_lambda<- function(vary_Temp, Parameter_data){
   sine_data<-as.data.frame(sine_x)
   sine_y<- amplitude_func(vary_Temp)*sin((2*pi*sine_x)/365-2.5)+vary_Temp
   sine_data$sine_y <- sine_y
-  
-  #plot(sine_x,sine_y,type="l", ylab = "Temp", xlab = "Days")
   sine_temp_data<-as.data.frame(sine_y)
-  #need nov.years and no.years.for.sim
-  #burn in uses nov years to calculate no years for sim so just need no years for sim in thsi bit
   sine_temp_data$no.years.for.sim<-rep(1:70, each =365)
   sine_temp_data$meantemp<- sine_y
   
@@ -729,56 +586,25 @@ calc_varied_temps_lambda<- function(vary_Temp, Parameter_data){
   allmonthsdata_0_PDT4_noburnin<-allmonthsdata_0_PDT4[-burnin2remove]
   Lambda[6]<-get_lambda(allmonths = allmonthsdata_0_PDT4_noburnin)
   
-  # allmonthsdata_0_PDT4<-get_month_matrices(z0 = Parameter_data$z0[7] , at0 = Parameter_data$at0[7],  y = y, h = h, n = n, Temp_vector_data = sine_temp_data, spawningmonth = 11)
-  # allmonthsdata_0_PDT4_noburnin<-allmonthsdata_0_PDT4[-burnin2remove]
-  # Lambda[7]<-get_lambda(allmonths = allmonthsdata_0_PDT4_noburnin)
-  # 
-  # allmonthsdata_0_PDT4<-get_month_matrices(z0 = Parameter_data$z0[8] , at0 = Parameter_data$at0[8],  y = y, h = h, n = n, Temp_vector_data = sine_temp_data, spawningmonth = 11)
-  # allmonthsdata_0_PDT4_noburnin<-allmonthsdata_0_PDT4[-burnin2remove]
-  # Lambda[8]<-get_lambda(allmonths = allmonthsdata_0_PDT4_noburnin)
-  # 
-  # allmonthsdata_0_PDT4<-get_month_matrices(z0 = Parameter_data$z0[9] , at0 = Parameter_data$at0[9],  y = y, h = h, n = n, Temp_vector_data = sine_temp_data, spawningmonth = 11)
-  # allmonthsdata_0_PDT4_noburnin<-allmonthsdata_0_PDT4[-burnin2remove]
-  # Lambda[9]<-get_lambda(allmonths = allmonthsdata_0_PDT4_noburnin)
-  # 
   LambdaTempdf<-cbind(Parameter_data, Lambda, Temp)
   
   return(LambdaTempdf)
-} #FOR SIX PARAMS
+} 
 
 
 aug_median_mass_vary_temp<- function(vary_Temp, at0, z0){
-  
-  #create temp data frame
-  
-  # #0-25
-  # sine_x<- seq(1, 365*70, by = 1)
-  # sine_data<-as.data.frame(sine_x)
-  # sine_y<- amplitude_func(vary_Temp)*sin((2*pi*sine_x)/365-2.5)+vary_Temp
-  # sine_data$sine_y <- sine_y
-  # 
-  # #plot(sine_x,sine_y,type="l", ylab = "Temp", xlab = "Days")
-  # sine_temp_data<-as.data.frame(sine_y)
-  # #need nov.years and no.years.for.sim
-  # #burn in uses nov years to calculate no years for sim so just need no years for sim in thsi bit
-  # sine_temp_data$no.years.for.sim<-rep(1:70, each =365)
-  # sine_temp_data$meantemp<- sine_y
   
   #flucs
   sine_x<- seq(1, 365*70, by = 1)
   sine_data<-as.data.frame(sine_x)
   sine_y<- amplitude_func(vary_Temp)*sin((2*pi*sine_x)/365-2.5)+vary_Temp
   sine_data$sine_y <- sine_y
-  
-  #plot(sine_x,sine_y,type="l", ylab = "Temp", xlab = "Days")
   sine_temp_data<-as.data.frame(sine_y)
-  #need nov.years and no.years.for.sim
-  #burn in uses nov years to calculate no years for sim so just need no years for sim in thsi bit
   sine_temp_data$no.years.for.sim<-rep(1:70, each =365)
   sine_temp_data$meantemp<- sine_y
   
   abundance_data<-project_monthmatrices(y = y, h = h, n = n, initial_abundance = initial_abundance, Temp_vector_data = sine_temp_data, at0 = at0, z0 = z0, spawningmonth = 11)
-  #plot(colSums(abundance_data), type ="l" , log = "y")
+
   #Save length of abundance_data (long format)
   length<- ncol(abundance_data)
   #Into data frame
@@ -798,9 +624,7 @@ aug_median_mass_vary_temp<- function(vary_Temp, at0, z0){
   #Select August
   DF_fixed_aug<-subset(DF_fixed, month == "8")
   
-  #Stable Age distribution as graph?
-  
-  #need to time average over 'model' time 
+  #Stable Age distribution
   #group by mass calculate mean abundance
   avprop_overTS<-DF_fixed_aug %>% group_by(logmass) %>% summarise(average_ts = mean(abundance))
   
@@ -814,8 +638,7 @@ aug_median_mass_vary_temp<- function(vary_Temp, at0, z0){
     labs(title = "Model: Time averaged proportions", y = "Average proportion over years")+
     theme_cowplot()
   print(p)
-  
-  #aug_median_mass<-avprop_overTS$logmass[which.min(abs(avprop_overTS$averageprop_ts - median(avprop_overTS$averageprop_ts)))]
+  #calc median of size dst
   aug_median_mass<-weighted.median(avprop_overTS$logmass, avprop_overTS$averageprop_ts)
   
   return(aug_median_mass)
