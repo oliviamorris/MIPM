@@ -10,7 +10,7 @@ library(gmp)
 
 
 #Source IPM functions R script (one that varies at0 and z0)
-source("Desktop/MIPM/Code/IPM_functions.R")
+source("../Code/IPM_functions.R")
 
 #Initial abundance
 initial_abundance<- rep(0, n)
