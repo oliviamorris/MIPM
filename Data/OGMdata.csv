@@ -1,0 +1,398 @@
+ID,Lifestage,Weight_g,Standardised_day,Group,Error,Temperature,Location,Latitude,LabField,Species,Food_availability,Food_notes,ReferenceDOI,ReferenceID,Notes,Consecutive_timescale_all,Consecutive_timescale_field,Consecutive_timescale_lab,Temp_consec_time
+1,1SW,1704.7945,0,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13868,13400,,
+1,1SW,1744.133,10,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13878,13410,,
+1,1SW,1802.6203,20,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13898,13430,,
+1,1SW,1870.6967,30,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13928,13460,,
+1,1SW,1929.184,40,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13968,13500,,
+1,1SW,1987.6859,50,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14018,13550,,
+1,1SW,2046.1438,60,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14078,13610,,
+1,1SW,2143.046,70,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14148,13680,,
+1,1SW,2211.1077,80,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14228,13760,,
+1,1SW,2307.995,90,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14318,13850,,
+1,1SW,2414.413,100,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14418,13950,,
+1,1SW,2559.2015,110,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14528,14060,,
+1,1SW,2675.2524,120,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14648,14180,,
+1,1SW,2820.041,130,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14778,14310,,
+1,1SW,3003.186,140,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14918,14450,,
+2,1SW,1840.0089,0,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13868,13400,,
+2,1SW,1879.3473,10,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13878,13410,,
+2,1SW,1956.9833,20,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13898,13430,,
+2,1SW,2044.2524,30,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13928,13460,,
+2,1SW,2112.3288,40,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13968,13500,,
+2,1SW,2209.1868,50,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14018,13550,,
+2,1SW,2258.0411,60,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14078,13610,,
+2,1SW,2345.3248,70,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14148,13680,,
+2,1SW,2432.6231,80,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14228,13760,,
+2,1SW,2567.8375,90,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14318,13850,,
+2,1SW,2664.6957,100,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14418,13950,,
+2,1SW,2809.455,110,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14528,14060,,
+2,1SW,2954.273,120,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14648,14180,,
+2,1SW,3099.091,130,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14778,14310,,
+3,1SW,2149.7467,140,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14918,14450,,
+3,1SW,2246.6192,150,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,15068,14600,,
+3,1SW,2333.859,160,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,15228,14760,,
+3,1SW,2421.1135,170,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,15398,14930,,
+3,1SW,2508.397,180,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,15578,15110,,
+3,1SW,2605.226,190,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,15768,15300,,
+3,1SW,2750.0293,200,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,15968,15500,,
+3,1SW,2894.8326,210,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16178,15710,,
+3,1SW,3068.3885,220,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16398,15930,,
+4,1SW,1985.7651,0,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13868,13400,,
+4,1SW,2034.6634,10,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13878,13410,,
+4,1SW,2073.958,20,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13898,13430,,
+4,1SW,2151.6526,30,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13928,13460,,
+4,1SW,2200.507,40,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,13968,13500,,
+4,1SW,2307.0128,50,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14018,13550,,
+4,1SW,2423.0342,60,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14078,13610,,
+4,1SW,2548.7034,70,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14148,13680,,
+4,1SW,2664.6664,80,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14228,13760,,
+4,1SW,2799.8512,90,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14318,13850,,
+4,1SW,2963.8474,100,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14418,13950,,
+4,1SW,3108.6214,110,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,14528,14060,,
+5,2SW,4183.576,0,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16398,15930,,
+5,2SW,4251.638,10,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16408,15940,,
+5,2SW,4319.7,20,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16428,15960,,
+5,2SW,4378.2454,30,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16458,15990,,
+5,2SW,4475.0595,40,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16498,16030,,
+5,2SW,4562.314,50,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16548,16080,,
+5,2SW,4687.954,60,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16608,16140,,
+5,2SW,4804.0047,70,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16678,16210,,
+5,2SW,4948.7786,80,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16758,16290,,
+5,2SW,5122.3054,90,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16848,16380,,
+5,2SW,5305.5086,100,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16948,16480,,
+5,2SW,5527.01,110,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17058,16590,,
+5,2SW,5796.4854,120,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17178,16710,,
+5,2SW,6075.491,130,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17308,16840,,
+5,2SW,6364.13,140,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17448,16980,,
+5,2SW,6729.481,150,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17598,17130,,
+5,2SW,7104.4216,160,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17758,17290,,
+5,2SW,7517.6888,170,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17928,17460,,
+5,2SW,7978.9305,180,1,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,18108,17640,,
+6,2SW,4030.1223,0,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16398,15930,,
+6,2SW,4098.213,10,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16408,15940,,
+6,2SW,4156.7154,20,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16428,15960,,
+6,2SW,4253.5734,30,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16458,15990,,
+6,2SW,4359.977,40,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16498,16030,,
+6,2SW,4447.2456,50,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16548,16080,,
+6,2SW,4601.682,60,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16608,16140,,
+6,2SW,4746.456,70,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16678,16210,,
+6,2SW,4881.685,80,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16758,16290,,
+6,2SW,5036.048,90,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16848,16380,,
+6,2SW,5238.3857,110,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16958,16490,,
+6,2SW,5459.872,110,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17068,16600,,
+6,2SW,5671.813,120,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17188,16720,,
+6,2SW,5883.7395,130,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17318,16850,,
+6,2SW,6134.022,140,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17458,16990,,
+6,2SW,6422.6465,150,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17608,17140,,
+6,2SW,6692.064,160,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17768,17300,,
+6,2SW,7019.0587,170,2,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17938,17470,,
+7,2SW,3771.2622,0,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16398,15930,,
+7,2SW,3848.8688,10,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16408,15940,,
+7,2SW,3888.2368,20,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16428,15960,,
+7,2SW,3975.4765,30,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,They also altered photoperiod,16458,15990,,
+7,2SW,4043.553,40,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16498,16030,,
+7,2SW,4130.7926,50,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16548,16080,,
+7,2SW,4266.051,60,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16608,16140,,
+7,2SW,4382.0286,70,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16678,16210,,
+7,2SW,4507.6685,80,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16758,16290,,
+7,2SW,4671.664,90,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16848,16380,,
+7,2SW,4845.2053,100,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16948,16480,,
+7,2SW,5018.7907,110,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17058,16590,,
+7,2SW,5211.5393,120,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17178,16710,,
+7,2SW,5404.273,130,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17308,16840,,
+7,2SW,5654.526,140,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17448,16980,,
+7,2SW,5933.6057,150,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17598,17130,,
+7,2SW,6203.0225,160,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17758,17290,,
+7,2SW,6568.3737,170,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17928,17460,,
+7,2SW,6895.369,180,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,18108,17640,,
+7,2SW,7299.076,190,3,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,18298,17830,,
+8,2SW,3694.5353,0,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16398,15930,,
+8,2SW,3733.8297,10,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16408,15940,,
+8,2SW,3830.629,20,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16428,15960,,
+8,2SW,3889.1897,30,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16458,15990,,
+8,2SW,3957.2368,40,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16498,16030,,
+8,2SW,4063.728,50,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16548,16080,,
+8,2SW,4170.1164,60,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16608,16140,,
+8,2SW,4266.96,70,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16678,16210,,
+8,2SW,4363.8034,80,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16758,16290,,
+8,2SW,4489.458,90,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16848,16380,,
+8,2SW,4643.8355,100,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,16948,16480,,
+8,2SW,4817.4205,110,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17058,16590,,
+8,2SW,4981.4315,120,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17178,16710,,
+8,2SW,5174.1214,130,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17308,16840,,
+8,2SW,5366.914,140,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17448,16980,,
+8,2SW,5598.004,150,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17598,17130,,
+8,2SW,5829.05,160,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17758,17290,,
+8,2SW,6108.144,170,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,17928,17460,,
+8,2SW,6415.946,180,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,18108,17640,,
+8,2SW,6733.323,190,4,,,Scotland,,Field,Atlantic Salmon,,,10.1093/icesjms/fsp096,1,,18298,17830,,
+9,Fry,0.19,0,1,0.05,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,Flow was chnaged for these,105,0,,
+9,Fry,0.21,0,1,0.05,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,Flow was chnaged for these,105,0,,
+9,Fry,0.19,3,1,0.05,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,Flow was chnaged for these,108,3,,
+9,Fry,0.25,3,1,0.04,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,Flow was chnaged for these,108,3,,
+9,Fry,0.2,6,1,0.02,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,Flow was chnaged for these,114,6,,
+9,Fry,0.2,6,1,0.04,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,Flow was chnaged for these,114,6,,
+9,Fry,0.2,9,1,0.04,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,Flow was chnaged for these,123,9,,
+9,Fry,0.21,9,1,0.03,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,,123,9,,
+9,Fry,0.2,12,1,0.05,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,,135,12,,
+9,Fry,0.24,12,1,0.07,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,,135,12,,
+10,Fry,0.27,0,2,0.05,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,,105,0,,
+10,Fry,0.26,0,2,0.03,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,,105,0,,
+10,Fry,0.29,7,2,0.08,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,,112,7,,
+10,Fry,0.35,7,2,0.08,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,,112,7,,
+10,Fry,0.29,10,2,0.12,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,,122,10,,
+10,Fry,0.38,10,2,0.08,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,,122,10,,
+10,Fry,0.28,14,2,0.09,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,,136,14,,
+10,Fry,0.38,14,2,0.1,,"Newfoundland, Canada",,Field,Atlantic Salmon,,,10.1139/f03-162,2,,136,14,,
+11,Parr,0.15270817,0,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,189,15,,
+11,Parr,0.16330063,3,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,192,18,,
+11,Parr,0.20417109,11,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,203,29,,
+11,Parr,0.2282831,14,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,217,43,,
+11,Parr,0.24964549,19,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,236,62,,
+11,Parr,0.31915897,27,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,263,89,,
+11,Parr,0.6518436,43,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,306,132,,
+11,Parr,1.0178473,43,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,349,175,,
+11,Parr,0.91103405,51,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,400,226,,
+11,Parr,1.3016915,56,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,456,282,,
+11,Parr,1.1912136,63,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,519,345,,
+11,Parr,2.3800776,84,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,603,429,,
+11,Parr,2.5451696,87,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,690,516,,
+11,Parr,3.2563539,106,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,796,622,,
+11,Parr,3.3286374,102,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,898,724,,
+11,Parr,3.81266,132,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,1030,856,,
+11,Parr,3.979027,105,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,1135,961,,
+11,Parr,5.822878,134,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,1269,1095,,
+11,Parr,5.82796,147,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,1416,1242,,
+11,Parr,6.6652293,155,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,1571,1397,,
+11,Parr,7.450749,155,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,1726,1552,,
+11,Parr,5.337399,165,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,1891,1717,,
+11,Parr,6.105524,176,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,2067,1893,,
+11,Parr,4.513933,325,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,2392,2218,,
+11,Parr,7.3801284,346,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,2738,2564,,
+11,Parr,7.3833485,352,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,3090,2916,,
+11,Parr,9.859716,346,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,3436,3262,,
+11,Parr,8.082198,372,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,3808,3634,,
+11,Parr,11.042168,374,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,4182,4008,,
+11,Parr,15.794335,395,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,4577,4403,,
+11,Parr,17.287418,413,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,4990,4816,,
+11,Parr,16.539345,417,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,5407,5233,,
+11,Parr,25.26795,424,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,5831,5657,,
+11,Parr,25.88241,450,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,6281,6107,,
+11,Parr,27.707918,469,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,6750,6576,,
+11,Parr,32.480396,513,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,7263,7089,,
+11,Parr,29.071892,522,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,7785,7611,,
+11,Parr,33.248486,530,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,8315,8141,,
+11,Parr,32.540665,541,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,8856,8682,,
+11,Parr,29.458029,719,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,9575,9401,,
+11,Parr,36.05449,742,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,10317,10143,,
+11,Parr,70.51195,776,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,11093,10919,,
+11,Parr,56.458576,784,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,11877,11703,,
+11,Parr,51.757015,817,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,12694,12520,,
+11,Parr,63.519764,880,1,,,England,,Field,Atlantic Salmon,,,10.1046/j.1365-2435.1997.00130.x,3,,13574,13400,,
+12,Alevin,0.101388374,0,1,,10,Canada,,Lab,Atlantic Salmon,,,10.1016/0144-8609(94)P4428-E,4,,0,,0,0
+12,Alevin,0.12216283,8,1,,10,Canada,,Lab,Atlantic Salmon,,,10.1016/0144-8609(94)P4428-E,4,,8,,8,8
+12,Alevin,0.13738773,16,1,,10,Canada,,Lab,Atlantic Salmon,,,10.1016/0144-8609(94)P4428-E,4,,16,,16,16
+12,Alevin,0.14908638,24,1,,10,Canada,,Lab,Atlantic Salmon,,,10.1016/0144-8609(94)P4428-E,4,,24,,24,24
+12,Alevin,0.16078667,32,1,,10,Canada,,Lab,Atlantic Salmon,,,10.1016/0144-8609(94)P4428-E,4,,32,,32,32
+12,Alevin,0.15130685,40,1,,10,Canada,,Lab,Atlantic Salmon,,,10.1016/0144-8609(94)P4428-E,4,,40,,40,40
+13,Fry,1.31,0,3,0.02,16,Canada,,Lab,Atlantic Salmon,Unlimited,Fed regularly,10.1016/S0144-8609(99)00002-3,4,,105,,105,40
+13,Fry,3.85,28,3,0.085,16,Canada,,Lab,Atlantic Salmon,Unlimited,Fed regularly,10.1016/S0144-8609(99)00002-3,4,,133,,133,68
+13,Fry,11.54,56,3,0.306,16,Canada,,Lab,Atlantic Salmon,Unlimited,Fed regularly,10.1016/S0144-8609(99)00002-3,4,,189,,189,124
+14,Fry,1.44,0,4,0.023,16,Canada,,Lab,Atlantic Salmon,Unlimited,Fed regularly,10.1016/S0144-8609(99)00002-3,4,,105,,105,40
+14,Fry,4.01,28,4,0.089,16,Canada,,Lab,Atlantic Salmon,Unlimited,Fed regularly,10.1016/S0144-8609(99)00002-3,4,,133,,133,68
+14,Fry,12.02,56,4,0.288,16,Canada,,Lab,Atlantic Salmon,Unlimited,Fed regularly,10.1016/S0144-8609(99)00002-3,4,,189,,189,124
+15,Fry,1.35,0,5,0.025,16,Canada,,Lab,Atlantic Salmon,Unlimited,Fed regularly,10.1016/S0144-8609(99)00002-3,4,,105,,105,40
+15,Fry,3.41,28,5,0.076,16,Canada,,Lab,Atlantic Salmon,Unlimited,Fed regularly,10.1016/S0144-8609(99)00002-3,4,,133,,133,68
+15,Fry,10.36,56,5,0.249,16,Canada,,Lab,Atlantic Salmon,Unlimited,Fed regularly,10.1016/S0144-8609(99)00002-3,4,,189,,189,124
+16,Parr,6.6212764,0,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,189,,189,124
+16,Parr,7.190389,0,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,189,,189,124
+16,Parr,8.911329,15,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,204,,204,139
+16,Parr,9.5939865,15,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,204,,204,139
+16,Parr,10.176147,29,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,233,,233,168
+16,Parr,10.85936,29,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,233,,233,168
+16,Parr,11.5422945,29,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,233,,233,168
+16,Parr,12.807668,43,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,276,,276,211
+16,Parr,13.149136,43,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,276,,276,211
+16,Parr,15.311763,43,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,276,,276,211
+16,Parr,18.284195,56,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,332,,332,267
+16,Parr,16.463036,56,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,332,,332,267
+16,Parr,16.007746,56,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,332,,332,267
+16,Parr,15.552456,56,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,332,,332,267
+16,Parr,26.03856,72,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,404,,404,339
+16,Parr,22.850975,72,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,404,,404,339
+16,Parr,21.48566,72,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,404,,404,339
+16,Parr,25.70903,84,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,488,,488,423
+16,Parr,27.189001,84,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,488,,488,423
+16,Parr,28.554594,84,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,488,,488,423
+16,Parr,30.944866,84,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,488,,488,423
+16,Parr,36.194027,98,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,586,,586,521
+16,Parr,28.454096,98,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,586,,586,521
+16,Parr,42.12612,112,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,698,,698,633
+16,Parr,37.34613,112,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,698,,698,633
+16,Parr,32.45149,112,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,698,,698,633
+16,Parr,37.81336,125,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,823,,823,758
+16,Parr,44.18714,125,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,823,,823,758
+16,Parr,48.626217,125,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,823,,823,758
+16,Parr,60.370754,147,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,970,,970,905
+16,Parr,51.834347,147,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,970,,970,905
+16,Parr,47.28117,147,2,,12.6,Canada,,Lab,Atlantic Salmon,,,10.1016/S0044-8486(00)00331-8,5,,970,,970,905
+17,Parr,5.884956,0,3,,18,"NorthEast USA, Connecticut River",,Lab,Atlantic Salmon,Unlimited,Fed to satiation,10.1016/S0044-8486(98)00351-2,6,,189,,189,124
+17,Parr,7.743363,11,3,,18,"NorthEast USA, Connecticut River",,Lab,Atlantic Salmon,Unlimited,Fed to satiation,10.1016/S0044-8486(98)00351-2,6,,200,,200,135
+17,Parr,10.398231,20,3,,18,"NorthEast USA, Connecticut River",,Lab,Atlantic Salmon,Unlimited,Fed to satiation,10.1016/S0044-8486(98)00351-2,6,,220,,220,155
+17,Parr,14.20354,30,3,,18,"NorthEast USA, Connecticut River",,Lab,Atlantic Salmon,Unlimited,Fed to satiation,10.1016/S0044-8486(98)00351-2,6,,250,,250,185
+18,Parr,0.16913237,0,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,Photoperiod changes,189,,189,
+18,Parr,0.3426578,27,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,216,,216,
+18,Parr,0.96201307,53,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,269,,269,
+18,Parr,1.4046127,70,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,339,,339,
+18,Parr,3.8962464,96,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,435,,435,
+18,Parr,8.706247,119,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,554,,554,
+18,Parr,15.83371,145,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,699,,699,
+18,Parr,22.603851,176,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,875,,875,
+18,Parr,25.89754,203,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,1078,,1078,
+18,Parr,26.604755,236,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,1314,,1314,
+18,Parr,32.125782,271,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,1585,,1585,
+18,Parr,31.406874,303,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,1888,,1888,
+18,Parr,35.32457,330,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,2218,,2218,
+18,Parr,39.509594,359,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,2577,,2577,
+18,Parr,41.999676,393,4,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,2970,,2970,
+19,Parr,0.16913237,0,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,189,,189,
+19,Parr,0.25350475,27,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,216,,216,
+19,Parr,0.8727954,53,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,269,,269,
+19,Parr,1.137089,70,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,339,,339,
+19,Parr,3.1831515,95,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,434,,434,
+19,Parr,5.2292137,119,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,553,,553,
+19,Parr,7.453324,145,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,698,,698,
+19,Parr,11.72705,176,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,874,,874,
+19,Parr,13.594419,203,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,1077,,1077,
+19,Parr,14.034175,236,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,1313,,1313,
+19,Parr,17.148136,271,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,1584,,1584,
+19,Parr,17.142387,303,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,1887,,1887,
+19,Parr,19.990181,331,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,2218,,2218,
+19,Parr,23.372892,359,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,2577,,2577,
+19,Parr,28.002584,393,5,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,2970,,2970,
+20,Parr,0.07999631,0,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,189,,189,
+20,Parr,0.34273055,27,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,216,,216,
+20,Parr,0.24884151,53,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,269,,269,
+20,Parr,1.0482876,70,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,339,,339,
+20,Parr,1.935355,95,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,434,,434,
+20,Parr,2.3768854,119,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,553,,553,
+20,Parr,3.0854795,145,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,698,,698,
+20,Parr,4.417567,176,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,874,,874,
+20,Parr,4.323484,203,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,1077,,1077,
+20,Parr,5.209194,236,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,1313,,1313,
+20,Parr,6.2728605,271,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,1584,,1584,
+20,Parr,6.8913136,303,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,1887,,1887,
+20,Parr,7.510348,331,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,2218,,2218,
+20,Parr,7.5053725,359,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,2577,,2577,
+20,Parr,10.88764,393,6,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,2970,,2970,
+21,Parr,0.44017142,0,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,189,,189,
+21,Parr,1.1456816,28,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,217,,217,
+21,Parr,2.206908,55,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,272,,272,
+21,Parr,3.004083,67,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,339,,339,
+21,Parr,3.8898973,81,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,420,,420,
+21,Parr,5.397539,95,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,515,,515,
+21,Parr,7.7046733,109,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,624,,624,
+21,Parr,11.877226,123,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,747,,747,
+21,Parr,21.91092,147,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,894,,894,
+21,Parr,35.40863,174,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,1068,,1068,
+21,Parr,40.913345,190,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,1258,,1258,
+21,Parr,40.28901,204,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,1462,,1462,
+21,Parr,46.504707,218,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,1680,,1680,
+21,Parr,56.273773,232,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,1912,,1912,
+21,Parr,63.733063,247,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,2159,,2159,
+21,Parr,66.92833,261,7,,,Scotland,,Lab,Atlantic Salmon,Unlimited,100% food,10.1016/j.aquaculture.2006.03.023,7,,2420,,2420,
+22,Parr,0.35133892,0,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,189,,189,
+22,Parr,0.968081,28,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,217,,217,
+22,Parr,2.2069724,55,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,272,,272,
+22,Parr,2.9152505,67,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,339,,339,
+22,Parr,3.8011293,81,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,420,,420,
+22,Parr,5.131106,95,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,515,,515,
+22,Parr,6.6386833,109,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,624,,624,
+22,Parr,9.212251,123,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,747,,747,
+22,Parr,14.09366,147,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,894,,894,
+22,Parr,20.040674,174,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,1068,,1068,
+22,Parr,27.055544,190,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,1258,,1258,
+22,Parr,29.895609,204,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,1462,,1462,
+22,Parr,29.09354,218,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,1680,,1680,
+22,Parr,37.26362,232,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,1912,,1912,
+22,Parr,38.593468,247,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,2159,,2159,
+22,Parr,43.74305,261,8,,,Scotland,,Lab,Atlantic Salmon,Limited,66% food,10.1016/j.aquaculture.2006.03.023,7,,2420,,2420,
+23,Parr,0.44010705,0,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,189,,189,
+23,Parr,1.0567204,28,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,217,,217,
+23,Parr,2.206908,55,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,272,,272,
+23,Parr,2.8262248,67,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,339,,339,
+23,Parr,3.4458637,81,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,420,,420,
+23,Parr,3.9762194,95,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,515,,515,
+23,Parr,4.4178715,109,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,624,,624,
+23,Parr,4.8595233,123,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,747,,747,
+23,Parr,6.0987363,147,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,894,,894,
+23,Parr,5.2944164,174,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,1068,,1068,
+23,Parr,7.690061,190,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,1258,,1258,
+23,Parr,8.309314,204,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,1462,,1462,
+23,Parr,8.573172,218,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,1680,,1680,
+23,Parr,7.5935683,232,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,,1912,,1912,
+23,Parr,8.568087,247,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,Flow was chnaged for these,2159,,2159,
+23,Parr,8.743048,261,9,,,Scotland,,Lab,Atlantic Salmon,Limited,33% food,10.1016/j.aquaculture.2006.03.023,7,Flow was chnaged for these,2420,,2420,
+24,PostSmolt,75.01942,0,1,,14,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13826,,3222,1157
+24,PostSmolt,88.33549,14,1,,14,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13840,,3236,1171
+24,PostSmolt,117.64931,28,1,,14,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13868,,3264,1199
+24,PostSmolt,157.1517,42,1,,14,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13910,,3306,1241
+24,PostSmolt,214.8269,56,1,,14,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13966,,3362,1297
+24,PostSmolt,265.95667,70,1,,14,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,14036,,3432,1367
+24,PostSmolt,297.45456,84,1,,14,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,14120,,3516,1451
+25,PostSmolt,75.01942,0,2,,18,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13826,,3222,1157
+25,PostSmolt,84.69913,14,2,,18,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13840,,3236,1171
+25,PostSmolt,116.924286,28,2,,18,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13868,,3264,1199
+25,PostSmolt,152.78131,42,2,,18,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13910,,3306,1241
+25,PostSmolt,196.6451,56,2,,18,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13966,,3362,1297
+25,PostSmolt,228.13847,70,2,,18,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,14036,,3432,1367
+25,PostSmolt,251.63637,84,2,,18,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,14120,,3516,1451
+26,PostSmolt,75.01942,0,3,,10,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13826,,3222,1157
+26,PostSmolt,83.24458,14,3,,10,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13840,,3236,1171
+26,PostSmolt,109.651566,28,3,,10,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13868,,3264,1199
+26,PostSmolt,144.78581,42,3,,10,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13910,,3306,1241
+26,PostSmolt,190.82916,56,3,,10,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13966,,3362,1297
+26,PostSmolt,237.59077,70,3,,10,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,14036,,3432,1367
+26,PostSmolt,265.4523,84,3,,10,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,14120,,3516,1451
+27,PostSmolt,74.292145,0,4,,6,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13826,,3222,1157
+27,PostSmolt,77.42865,14,4,,6,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13840,,3236,1171
+27,PostSmolt,89.285675,28,4,,6,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13868,,3264,1199
+27,PostSmolt,104.78356,42,4,,6,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13910,,3306,1241
+27,PostSmolt,126.09513,56,4,,6,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13966,,3362,1297
+27,PostSmolt,142.32254,70,4,,6,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,14036,,3432,1367
+27,PostSmolt,154.17957,84,4,,6,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,14120,,3516,1451
+28,Smolt,77,0,1,14.6,,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13826,,2970,
+28,Smolt,87.8,31,1,12.27,,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13605,,3001,
+28,Smolt,93.8,49,1,10.6,,Norway,,Lab,Atlantic Salmon,,,10.1016/j.aquaculture.2008.06.042,8,,13654,,3050,
+29,Smolt,40.8,0,2,5.8,12,Norway,,Lab,Atlantic Salmon,Unlimited,Fed excess dry pellets,10.1016/S0044-8486(02)00508-2,9,,13574,,2970,905
+29,Smolt,45.6,54,2,6.7,12,Norway,,Lab,Atlantic Salmon,Unlimited,Fed excess dry pellets,10.1016/S0044-8486(02)00508-2,9,,13628,,3024,959
+30,Smolt,57.982635,0,3,,8,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13826,,2970,905
+30,Smolt,72.291306,48,3,,8,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13622,,3018,953
+30,Smolt,115.53269,89,3,,8,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13711,,3107,1042
+30,Smolt,138.63286,115,3,,8,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13826,,3222,1157
+31,Smolt,53.345753,0,4,,4,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13574,,2970,905
+31,Smolt,62.473705,48,4,,4,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13622,,3018,953
+31,Smolt,79.26013,89,4,,4,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13711,,3107,1042
+31,Smolt,88.995636,115,4,,4,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13826,,3222,1157
+32,Smolt,50.619034,0,5,,8,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13574,,2970,905
+32,Smolt,63.290806,48,5,,8,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13622,,3018,953
+32,Smolt,105.44183,89,5,,8,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13711,,3107,1042
+32,Smolt,132.35962,115,5,,8,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13826,,3222,1157
+33,Smolt,50.073044,0,6,,4,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13574,,2970,905
+33,Smolt,61.109535,48,6,,4,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13622,,3018,953
+33,Smolt,73.533424,89,6,,4,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13711,,3107,1042
+33,Smolt,76.99569,115,6,,4,Norway,,Lab,Atlantic Salmon,Unlimited,,10.1016/S0044-8486(98)00356-1,10,,13826,,3222,1157
+34,Alevin,0.08240845,0,2,,,Norway,,Lab,Rainbow Trout,Unlimited,Without maca,10.1111/j.1365-2109.2004.01022.x,11,,0,,0,
+34,Alevin,0.17057663,14,2,,,Norway,,Lab,Rainbow Trout,Unlimited,,10.1111/j.1365-2109.2004.01022.x,11,,14,,14,
+34,Alevin,0.44959128,27,2,,,Norway,,Lab,Rainbow Trout,Unlimited,,10.1111/j.1365-2109.2004.01022.x,11,,27,,27,
+34,Alevin,0.70169026,41,2,,,Norway,,Lab,Rainbow Trout,Unlimited,,10.1111/j.1365-2109.2004.01022.x,11,,41,,41,
+34,Alevin,1.2263795,56,2,,,Norway,,Lab,Rainbow Trout,Unlimited,,10.1111/j.1365-2109.2004.01022.x,11,,56,,56,
+34,Alevin,1.6963514,70,2,,,Norway,,Lab,Rainbow Trout,Unlimited,,10.1111/j.1365-2109.2004.01022.x,11,,70,,70,
+34,Alevin,2.3571699,84,2,,,Norway,,Lab,Rainbow Trout,Unlimited,,10.1111/j.1365-2109.2004.01022.x,11,,84,,84,
+34,Alevin,3.2120466,105,2,,,Norway,,Lab,Rainbow Trout,Unlimited,,10.1111/j.1365-2109.2004.01022.x,11,,105,,105,
+35,PostSmolt,73,0,,,10,,,Lab,Atlantic Salmon,Unlimited,excess (3% of body weight day−1),10.1046/j.1365-2109.2001.00632.x,12,,,,,1157
+35,PostSmolt,114,28,,,10,,,Lab,Atlantic Salmon,Unlimited,excess (3% of body weight day−1),10.1046/j.1365-2109.2001.00632.x,12,,,,,1185
+35,PostSmolt,170,56,,,10,,,Lab,Atlantic Salmon,Unlimited,excess (3% of body weight day−1),10.1046/j.1365-2109.2001.00632.x,12,,,,,1241
+36,PostSmolt,73,0,,,10,,,Lab,Atlantic Salmon,Limited,half the feed ration predicted to support high growth rates,10.1046/j.1365-2109.2001.00632.x,12,,,,,1157
+36,PostSmolt,103,28,,,10,,,Lab,Atlantic Salmon,Limited,half the feed ration predicted to support high growth rates,10.1046/j.1365-2109.2001.00632.x,12,,,,,1185
+36,PostSmolt,135,56,,,10,,,Lab,Atlantic Salmon,Limited,half the feed ration predicted to support high growth rates,10.1046/j.1365-2109.2001.00632.x,12,,,,,1241
