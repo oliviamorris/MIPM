@@ -427,18 +427,12 @@ get_lambda<- function(allmonths){
 ################################################################################
 #Functions needed for running manuscript code
 
-#so amplitude needs to be a function of meantemp
-amplitude_func<- function(meantemp, x = 6.2285, y = -0.1227){
-  amp<-( y * meantemp) + x
-  return(amp)
-}
 
-
-#Create function to make fixed temp dataframe (fixed for 60 years for now)
+#Create function to make fixed temp dataframe (fixed for 60 years for now, with 10 yers of burn in)
 create_fixed_temp_df<- function(fixdtemp){
   meantemp<-  rep(fixdtemp,365*70) 
   fixed_temp_data<-as.data.frame(meantemp)
-  fixed_temp_data$no.years.for.sim<-rep(1:70, each =365)
+  fixed_temp_data$no.years.for.sim<-rep(1:70, each = 365)
   return(fixed_temp_data)
 }
 
