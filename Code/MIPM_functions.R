@@ -83,6 +83,7 @@ g.yx=function(x, xp, Tc , t, sd = h, at0) {
 }
 
 
+#Survival Functions
 
 #U-shaped mortality
 Inv_sharpe_schoolfield_edited<- function(Tc, m, T_pk, z0, E, E_D, power){ #K is specified as global param for all other eqns
