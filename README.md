@@ -1,3 +1,3 @@
 # MIPM
 
-Code and data used to generate results for Climatic limits to Atlantic salmon population fitness at continental scales
+Code and data used to generate results for _A Metabolic Integral Projection Model for characterising the thermal niche in structured ectotherm populations_
