@@ -2,9 +2,9 @@
 
 #Global MIPM params
 # integration limits 
-min.size<- log(0.03) 
-max.size<- log(20000)
-# number of cells in the discretized kernel
+min.size<- log(minmass) 
+max.size<- log(maxmass)
+# number of cells in the discretised kernel
 n=300 #can be changed 
 # boundary points (the edges of the cells defining the kernel)
 b= seq(min.size, max.size, length.out = n+1)
@@ -14,11 +14,14 @@ y=0.5*(b[1:n]+b[2:(n+1)])
 h=y[2]-y[1] #same as (log(max.size) - log(min.size))/n
 
 
+#Source salmon parameters
+source("Code/Salmonparams.R")
 
+#######################################
 #Fecundity functions
 
 #Number of eggs
-f.yx <- function(xp, x, adult_mass = 1600, intercept = 7.260878, slope = 1.012753){  #m: mass(g), intercept and slope: from number of eggs produced per mass model
+f.yx <- function(xp, x, adult_mass = adult_mass_at_maturity, intercept = fecundity_lm_intercept, slope = fecundity_lm_slope){  #m: mass(g), intercept and slope: from number of eggs produced per mass 
   x<-exp(x) 
   xp<- exp(xp)
   #create empty vector to populate
@@ -38,24 +41,24 @@ f.yx <- function(xp, x, adult_mass = 1600, intercept = 7.260878, slope = 1.01275
 }
 
 #Size dist of egg sizes: input in log space
-d.yx<- function(x, xp){ 
-  dnorm(x, mean = log(0.125), sd = 0.2) 
+d.yx<- function(x, xp, mean_egg_size = mean_egg_size, egg_size_sd = egg_size_sd){ 
+  dnorm(x, mean = log(mean_egg_size), sd = egg_size_sd) 
 } 
 
-
+#######################################
 
 #Growth functions
-k = 8.62*(10^(-5)) # gobal param: boltzmann's constant
+k = 8.62*(10^(-5)) # global parameter: boltzmann's constant
 
 #a. Development time from mass NEW
-development_time <- function(m, Tc, at0, E=0.45, m0 = 0.03, M = 20000){ #m: mass(g), Tc: temp degrees celsius, t0: normalisation constant, a: slope, alpha=-E/kT20
+development_time <- function(m, Tc, at0, E = E, m0 = minmass, M = maxmass){ #m: mass(g), Tc: temp degrees celsius, t0: normalisation constant, a: slope, alpha=-E/kT20
   alpha = E/(k*(273^2))
   t <-  log( (1-( (m0/M)^(0.25) ))/ ( 1- ((m/M)^(0.25)) ) ) * (4 * (M^0.25) / ( at0 * exp(alpha* ( Tc/(1+(Tc/273))) )) ) 
   return(t)   #time in days to reach mass m
 }
 
 #b. Mass reached over developmental time NEW
-development_mass <- function(t, Tc, at0, E = 0.45, m0 = 0.03, M = 20000){ #t: time in days from above function, Tc: temp degrees celsius, t0: normalisation constant, a: slope, alpha=-E/kT_0^2
+development_mass <- function(t, Tc, at0, E = E, m0 = minmass, M = maxmass){ #t: time in days from above function, Tc: temp degrees celsius, t0: normalisation constant, a: slope, alpha=-E/kT_0^2
   k <- 8.62*(10^(-5))
   alpha = E/(k*(273^2)) 
   a_temp<- at0 * exp(alpha* (Tc/(1+(Tc/273))) )
@@ -82,7 +85,7 @@ g.yx=function(x, xp, Tc , t, sd = h, at0) {
   dnorm(x, mean = log_mass_t, sd =  sd) 
 }
 
-
+####################################
 #Survival Functions
 
 #U-shaped mortality
@@ -100,7 +103,7 @@ Inv_sharpe_schoolfield_edited<- function(Tc, m, T_pk, z0, E, E_D, power){ #K is 
   return(Inv_S_S)
 }
 
-s.x<- function(x, Tc, z0, E = 0.45, T_pk = 9.05793, power = 0.25, E_D = 2.10602){
+s.x<- function(x, Tc, z0, E = E, T_pk = T_pk, power = power, E_D = E_D){
   m<- exp(x) #exponentiate masses
   #daily mortality rate
   Z<-Inv_sharpe_schoolfield_edited(Tc, m, T_pk, z0, E, E_D, power)
@@ -112,9 +115,12 @@ s.x<- function(x, Tc, z0, E = 0.45, T_pk = 9.05793, power = 0.25, E_D = 2.10602)
 
 
 
+######################################################################
+
+#CREATE MATRICES
 
 #Start with normal day daily P
-create_P_kernel<- function(y, h, Tc, t = 1, at0 = at0, z0 = z0){ #specify min and max mass, n number of mesh points, exp-mesh = yes/no?
+create_P_kernel<- function(y, h, Tc, t = timescale, at0 = at0, z0 = z0){ #specify min and max mass, n number of mesh points, exp-mesh = yes/no?
   
   #Growth matrix G
   G = h*outer(y, y, g.yx, Tc, t, at0 = at0)  
@@ -127,7 +133,7 @@ create_P_kernel<- function(y, h, Tc, t = 1, at0 = at0, z0 = z0){ #specify min an
   return(P)
 }
 
-create_P_month<- function(y, h, month, Temp_vector, leapyear, at0 = at0, z0 = z0){  # month as a number e.g. Jan = 1, Feb = 2... etc, Tempvector data has be of year length and start from julian day 1 (01/01/YYY)
+create_P_month<- function(y, h, month, Temp_vector, leapyear, at0 = at0, z0 = z0){  # month as a number e.g. Jan = 1, Feb = 2... etc, Tempvector data has be of year length and start from julian day 1 (01/01/YYYY)
   #The Julian day at the beginning of each month 
   if (leapyear == "yes"){
     jday =  c(1,  32,  61,  92, 122, 153, 183, 214, 245, 275, 306, 336, 366)
@@ -156,8 +162,8 @@ create_P_month<- function(y, h, month, Temp_vector, leapyear, at0 = at0, z0 = z0
 
 
 
-#Reproduction day K= P+R
-create_K_kernel<- function(y, h, Tc, t = 1, at0 = at0, z0 = z0){ #specify min and max mass, n number of mesh points, exp-mesh = yes/no?
+#Reproduction day K = P+R
+create_K_kernel<- function(y, h, Tc, t = timescale, at0 = at0, z0 = z0){ #specify min and max mass, n number of mesh points, exp-mesh = yes/no?
   
   #Growth matrix
   G = h*outer(y,y,g.yx, Tc, t, at0 = at0)  
@@ -214,11 +220,12 @@ create_K_month<- function(y, h, Temp_vector, leapyear, month, spawningday, at0 =
 }
 
 
+
 #Create month matrices
-project_monthmatrices<- function (y, h, n, Temp_vector_data, initial_abundance, spawningmonth = 11 , spawningday = 1, at0 = at0, z0 = z0){
+project_monthmatrices<- function (y, h, n, Temp_vector_data, initial_abundance, spawningmonth = spawningmonth , spawningday = spawningday, at0 = at0, z0 = z0){
   
   start_time<-Sys.time()
-
+  
   years<- unique(Temp_vector_data$no.years.for.sim)
   
   #Convert input years to months
@@ -241,7 +248,7 @@ project_monthmatrices<- function (y, h, n, Temp_vector_data, initial_abundance, 
   #leap year?
   for (i in seq_along(years)){
     
-    data2subset<-subset(Temp_vector_data, no.years.for.sim == i) #novyears
+    data2subset<-subset(Temp_vector_data, no.years.for.sim == i) #no years
     Temp_vector<- data2subset$meantemp 
     
     if (nrow(data2subset) == 366){
@@ -274,7 +281,7 @@ project_monthmatrices<- function (y, h, n, Temp_vector_data, initial_abundance, 
   for (i in 2:(total_period_projection_months+1)){
     allabundances[,i]<- allmonths[[i-1]] %*% allabundances[,i-1]
   }
-
+  
   end_time<- Sys.time()
   #How long function takes to run
   print(end_time - start_time)
@@ -284,7 +291,89 @@ project_monthmatrices<- function (y, h, n, Temp_vector_data, initial_abundance, 
 
 
 
-#DATA
+###### a modification from projectmonthmatrices
+#Create month matrices
+get_month_matrices<- function (y, h, n, Temp_vector_data, spawningmonth = spawningmonth, spawningday = spawningday, at0 = at0, z0 = z0){
+  
+  start_time<-Sys.time()
+  
+  years<- unique(Temp_vector_data$no.years.for.sim)
+  
+  #create vector to put all months into
+  allmonths<-vector("list", max(years))
+  
+  #time frame beginning with spawning month
+  if (spawningmonth==1){
+    time <- 1:12
+  } else if (spawningmonth %in% 2:12) {
+    time<- c(spawningmonth:12,1:(spawningmonth-1))
+  }
+  
+  #leap year?
+  for (i in seq_along(years)){
+    
+    data2subset<-subset(Temp_vector_data, no.years.for.sim == i) #novyears
+    Temp_vector<- data2subset$meantemp #Temp_vector_data needs to have meantemp column
+    
+    if (nrow(data2subset) == 366){
+      leapyear <- "yes"
+    } else if (nrow(data2subset) == 365){
+      leapyear <- "no"
+    } else {
+      stop("wrong number of days")
+    }
+    
+    #create months list
+    months<- list()
+    
+    #spawning month as first month (IS THIS CORRECT OR SHOULD I AUTOMATE IT TO BE EASILY SPECIFIED?)
+    months[[1]] <-create_K_month(y, h, Temp_vector = Temp_vector, leapyear = leapyear, month = spawningmonth, spawningday = spawningday, at0 = at0, z0 = z0)
+    #rest of months
+    for (j in 2:12){
+      months[[j]] <- create_P_month(y, h, month = time[j] , Temp_vector = Temp_vector, leapyear = leapyear, at0 = at0, z0 = z0)
+    }
+    
+    #months into a year
+    allmonths[[i]]<- months
+    
+  }
+  
+  #Un list allmonths to loop over
+  allmonths<-lapply(rapply(allmonths, enquote, how="unlist"), eval)
+  
+  #How long function takes to run
+  end_time<- Sys.time()
+  print(end_time - start_time)
+  
+  return(allmonths) 
+}
+
+
+#ouput from above goes into this to get matrix out
+
+Project_abundances_matrix<- function(allmonths, Temp_vector_data, initial_abundance){
+  
+  #From temperature data input
+  years<- unique(Temp_vector_data$no.years.for.sim)
+  #Convert input years to months
+  total_period_projection_months<-max(years)* 12
+  #Create empty matrix to populate (abundance data)
+  allabundances<- matrix(0, nrow = n, ncol = total_period_projection_months+1) #plus one for initial abundance
+  #Insert initial abundance
+  allabundances[,1]<- initial_abundance
+  
+  #Project loop
+  for (i in 2:(total_period_projection_months+1)){
+    allabundances[,i]<- allmonths[[i-1]] %*% allabundances[,i-1]
+  }
+  
+  return(allabundances)
+}
+
+
+#########################
+#Data
+
 #function that adds burn in time by repeating first year of data n times
 add_burn_in<- function(data, n_burnin_years){
   #subset first years data
@@ -301,87 +390,7 @@ add_burn_in<- function(data, n_burnin_years){
 
 
 
-###### a modification from projectmonthmatrices
-#Create month matrices
-get_month_matrices<- function (y, h, n, Temp_vector_data, spawningmonth = 11 , spawningday = 1, at0 = at0, z0 = z0){
-
-  start_time<-Sys.time()
-
-  years<- unique(Temp_vector_data$no.years.for.sim)
-
-  #create vector to put all months into
-  allmonths<-vector("list", max(years))
-
-  #time frame beginning with spawning month
-  if (spawningmonth==1){
-    time <- 1:12
-  } else if (spawningmonth %in% 2:12) {
-    time<- c(spawningmonth:12,1:(spawningmonth-1))
-  }
-
-  #leap year?
-  for (i in seq_along(years)){
-
-    data2subset<-subset(Temp_vector_data, no.years.for.sim == i) #novyears
-    Temp_vector<- data2subset$meantemp #Temp_vector_data needs to have meantemp column
-
-    if (nrow(data2subset) == 366){
-      leapyear <- "yes"
-    } else if (nrow(data2subset) == 365){
-      leapyear <- "no"
-    } else {
-      stop("wrong number of days")
-    }
-
-    #create months list
-    months<- list()
-
-    #spawning month as first month (IS THIS CORRECT OR SHOULD I AUTOMATE IT TO BE EASILY SPECIFIED?)
-    months[[1]] <-create_K_month(y, h, Temp_vector = Temp_vector, leapyear = leapyear, month = spawningmonth, spawningday = spawningday, at0 = at0, z0 = z0)
-    #rest of months
-    for (j in 2:12){
-      months[[j]] <- create_P_month(y, h, month = time[j] , Temp_vector = Temp_vector, leapyear = leapyear, at0 = at0, z0 = z0)
-    }
-
-    #months into a year
-    allmonths[[i]]<- months
-
-  }
-
-  #Un list allmonths to loop over
-  allmonths<-lapply(rapply(allmonths, enquote, how="unlist"), eval)
-
-  #How long function takes to run
-  end_time<- Sys.time()
-  print(end_time - start_time)
-
-  return(allmonths) 
-}
-
-
-#ouput from above goes into this to get matrix out
-
-Project_abundances_matrix<- function(allmonths, Temp_vector_data, initial_abundance){
-
-  #From temperature data input
-  years<- unique(Temp_vector_data$no.years.for.sim)
-  #Convert input years to months
-  total_period_projection_months<-max(years)* 12
-  #Create empty matrix to populate (abundance data)
-  allabundances<- matrix(0, nrow = n, ncol = total_period_projection_months+1) #plus one for initial abundance
-  #Insert initial abundance
-  allabundances[,1]<- initial_abundance
-
-  #Project loop
-  for (i in 2:(total_period_projection_months+1)){
-    allabundances[,i]<- allmonths[[i-1]] %*% allabundances[,i-1]
-  }
-
-  return(allabundances)
-}
-
-
-#Convert to dataframe for plotting
+#Convert to data frame for plotting
 matrix2dataframe<- function(abundancemodeldata, countdata, burnindates, modeldates, startdate){
   
   #start_time<-Sys.time()
@@ -424,9 +433,9 @@ get_lambda<- function(allmonths){
 }
 
 
+
 ################################################################################
 #Functions needed for running manuscript code
-
 
 #Create function to make fixed temp dataframe (fixed for 60 years for now, with 10 yers of burn in)
 create_fixed_temp_df<- function(fixdtemp){
@@ -607,7 +616,7 @@ aug_median_mass_vary_temp<- function(vary_Temp, at0, z0){
   sine_temp_data$meantemp<- sine_y
   
   abundance_data<-project_monthmatrices(y = y, h = h, n = n, initial_abundance = initial_abundance, Temp_vector_data = sine_temp_data, at0 = at0, z0 = z0, spawningmonth = 11)
-
+  
   #Save length of abundance_data (long format)
   length<- ncol(abundance_data)
   #Into data frame
@@ -648,4 +657,5 @@ aug_median_mass_vary_temp<- function(vary_Temp, at0, z0){
 }
 
 #################################################################################
+
 

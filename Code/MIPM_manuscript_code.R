@@ -1,4 +1,4 @@
-#Load packages
+#Load packages needed
 library(tidyr)
 library(ggplot2)
 library(dplyr)
@@ -14,29 +14,23 @@ source("Code/MIPM_functions.R")
 
 #Initial abundance
 initial_abundance<- rep(0, n)
-initial_abundance[1]<-1000
+initial_abundance[1]<-1000 #start with input of eggs and remove burn in after reaching SSD
 
-#Initial parameter estimates
-MT_z0<-0.00942460726973781
-MT_at0<- 0.0145767684333848
 
 #Create parameter data
-at0 = c(0.00728838421, 0.01093257632, MT_at0)
-z0 = c(0.01178075908, MT_z0)
-
+at0 = c(MT_at0 * 0.5, MT_at0 * 0.75, MT_at0) #25 and 50% reduction from metabolically optimal
+z0 = c(MT_z0 * 0.75, MT_z0) #25% from metabolically optimal
 Params2test<-crossing(at0, z0)
 Params2test$Growth<- c( "50red", "50red", "25red", "25red", "MTG", "MTG")
 Params2test$Survival<- c("MTS", "LowS", "MTS", "LowS", "MTS", "LowS")
 
-################################################################################
-#colours for plotting 
-colorBlind8<-c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7", "#999999")
 
+################################################################################
 
 #LAMBDAS FIXED TEMP
 #Temp 0
 LT0<-calc_fxd_temps_lambda(fxd_Temp = 0,  Parameter_data = Params2test)
-#Temp2.5
+#Temp 2.5
 LT2.5<-calc_fxd_temps_lambda(fxd_Temp = 2.5,  Parameter_data = Params2test)
 #Temp 5
 LT5<-calc_fxd_temps_lambda(fxd_Temp = 5,  Parameter_data = Params2test)
@@ -238,7 +232,6 @@ fixd_temps_peaks$Param_combo <- paste(fixd_temps_peaks$Growth, fixd_temps_peaks$
 
 ################################################################################################
 #FLUCTUATING LAMBDAS
-
 
 #Temp 0
 LFT0<-calc_varied_temps_lambda(vary_Temp = 0,  Parameter_data = Params2test)
